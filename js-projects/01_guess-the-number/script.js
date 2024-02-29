@@ -30,7 +30,10 @@
     result.innerText = ''
     allGuesses.innerText = ''
     startGameBtn.disabled = true
-    submitBtn.disabled = false
+    submitBtn.disabled = false;
+    //remove prevoius guess numbers
+    allGuessesArray.splice(0,allGuessesArray.length);
+    
     randomNumber = Math.round(Math.random() * 100)
   })
 })()
